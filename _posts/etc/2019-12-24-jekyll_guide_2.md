@@ -6,7 +6,7 @@ excerpt: Jekyll 테마 "Moon" 적용, 게시판 생성 및 페이지 커스터�
 tag:
 - jekyll
 - github
-category: etc
+category: jekyll
 comments: true
 ---
 

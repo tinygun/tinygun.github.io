@@ -6,7 +6,7 @@ excerpt: "Github 블로그 갖기 위한 여정"
 tag:
 - jekyll 
 - github
-category: etc
+category: jekyll
 comments: true
 ---
 

@@ -6,7 +6,7 @@ excerpt: 블로그 호스팅 절차 및 Jekyll 검색기능 등 추가 기능 �
 tag:
 - jekyll
 - github
-category: etc
+category: jekyll
 comments: true
 ---
 
