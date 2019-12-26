@@ -91,9 +91,7 @@ git push -u origin master
 
 ## 4. 검색기능 추가
 
-드디어 검색기능을 내
-
-이제 [구글 맞춤검색](https://cse.google.co.kr/cse/)으로 들어가보자.<br>
+드디어 검색기능을 활성화 시켰다.<br>이제 [구글 맞춤검색](https://cse.google.co.kr/cse/)으로 들어가보자.
 
 <figure>
     <a href="\posts_image\jekyll_guide\googlesearch.JPG"><img src="\posts_image\jekyll_guide\googlesearch.JPG"></a>
@@ -101,3 +99,5 @@ git push -u origin master
 </figure>
 
 만들기 들어가서 자기 주소에 대한 검색엔진을 만들어보자.
+
+검색엔진 수정을 통해 약간 수정한 뒤 `코드생성`이 있다.<br>해당 코드를 웹페이지에 추가하면 된다.
