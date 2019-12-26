@@ -22,13 +22,32 @@ comments: true
 
 그런데 파일이 100개 이상이라서 안 올라간다.<br>[git](https://gitforwindows.org/) 으로 그냥 올려야겠다.
 
-
-
-
-
-
-
 ---
+
+<br>
+
+## **2. 간단한 git 사용법**
+
+다른 분들 검색하면 잘 나오긴 하지만, 그냥 편하게 여기다 쓴다.<br>완전 처음일 경우를 가정한다.
+
+Windows 기준으로 git bash 실행 후, 블로그 작업 폴더에 들어가서 다음과 같이 실행한다.
+
+```markdown
+git init
+git add .
+
+git config --global user.name "username"
+git config --global user.email "username@example.com"
+
+git commit -m "first commit"
+git remote add origin "https://github.com/username/username.github.io.git"
+
+git config --global http.postBuffer 20971520
+
+git push -u origin master
+```
+
+(1) git에 필요한 파일을 만든다.<br>(2) 자기 신원을 적어둔다.<br>(3) 저장소에 연결한다.<br>(4) 파일 전송 크기를 조정한다. (선택사항)<br>(5) github에 올린다.
 
 
 
