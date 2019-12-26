@@ -27,7 +27,7 @@ comments: true
 
 <figure>
     <a href="\posts_image\jekyll_guide\disqus_sign.JPG"><img src="\posts_image\jekyll_guide\disqus_sign.JPG"></a>
-    <figcaption><center><b>가입한 e-mail로 인증 날아온다.</b></center></figcaption>
+    <figcaption><center><b>가입한 e-mail로 인증 날아온다</b></center></figcaption>
 </figure>
 
 <figure>
