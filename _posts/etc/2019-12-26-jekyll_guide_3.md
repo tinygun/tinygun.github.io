@@ -18,9 +18,7 @@ comments: true
 
 우선 github에 자신 주소로 사용할 이름의 저장소를 만들자.<br>나는 **[tinygun.github.io](https://github.com/tinygun/tinygun.github.io)** 라고 만들었다.<br>이렇게 해야 호스팅이 된다고 한다.<br>미리 이름을 정하고 만들면 404 뜨는 듯하다.
 
-원래 귀찮아서 github에 드래그로 옮길라고 했다.<br>어차피 최초 버전이라 버전 관리가 필요없으니까.
-
-그런데 파일이 100개 이상이라서 안 올라간다.<br>[git](https://gitforwindows.org/) 으로 그냥 올려야겠다.
+원래 귀찮아서 github에 드래그로 옮길라고 했다.<br>그런데 파일이 100개 이상이라서 안 올라간다.<br>나중에 관리상 문제도 있어서 [git](https://gitforwindows.org/) 으로 올린다.
 
 ---
 
@@ -30,7 +28,7 @@ comments: true
 
 다른 분들 검색하면 잘 나오긴 하지만, 그냥 편하게 여기다 쓴다.<br>완전 처음일 경우를 가정한다.
 
-Windows 기준으로 git bash 실행 후, 블로그 작업 폴더에 들어가서 다음과 같이 실행한다.
+Windows 기준으로 [git bash](https://git-scm.com/) 실행 후, 블로그 작업 폴더에 들어가서 다음과 같이 실행한다.
 
 ```markdown
 git init
