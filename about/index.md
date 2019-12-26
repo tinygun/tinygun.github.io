@@ -7,7 +7,6 @@ comments: false
 ---
 
 <center><a href="http://tinygun.github.io"><b>이곳</b></a>은 NLP 등 개인적인 공부 정리장입니다.</center>{: .notice}
-
 ## 관심분야
 * History Data Analysis
 * Social Network Analysis
@@ -29,6 +28,6 @@ comments: false
 
 ## 링크
 
-[My Home](http://127.0.0.1:4000){: .btn.btn-success}
+[My Home](https://tinygun.github.io/){: .btn.btn-success}
 
 [Theme origin](https://taylantatli.github.io/Moon/){: .btn}
