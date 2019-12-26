@@ -83,7 +83,15 @@ git push -u origin master
 
 그 후, `sitemap.xml` 파일을 만들어야 한다.<br>난 [이 분](https://github.com/wayhome25/wayhome25.github.io/blob/master/sitemap.xml) 것을 그대로 복사했다.<br>만들어 준 뒤 다시 github에 올려준다.<br>Search Console을 다시 들어가보면, 왼쪽에 `색인-Sitemaps` 부분이 있다.<br>여기 들어간 뒤 상단에 `sitemap.xml` 쓰고 사이트맵 추가하면 끝난다.
 
-[구글 맞춤검색](https://cse.google.co.kr/cse/)으로 들어가보자.<br>
+---
+
+<br>
+
+## 4. 검색기능 추가
+
+드디어 검색기능을 내
+
+이제 [구글 맞춤검색](https://cse.google.co.kr/cse/)으로 들어가보자.<br>
 
 <figure>
     <a href="\posts_image\jekyll_guide\googlesearch.JPG"><img src="\posts_image\jekyll_guide\googlesearch.JPG"></a>
