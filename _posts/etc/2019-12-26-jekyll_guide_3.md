@@ -100,4 +100,49 @@ git push -u origin master
 
 만들기 들어가서 자기 주소에 대한 검색엔진을 만들어보자.
 
-검색엔진 수정을 통해 약간 수정한 뒤 `코드생성`이 있다.<br>해당 코드를 웹페이지에 추가하면 된다.
+검색엔진 수정을 통해 약간 수정한 뒤 `코드생성`이 있다.<br>해당 코드를 웹페이지에 추가하면 된다.<br>나는 layout 중 page를 기반으로 search의 index.html을 수정했다.
+
+검색이 되려면, 좀 오래 걸린다고 들었다.<br>언젠가 될 때를 기약하자. 
+
+가끔 블로그 업데이트가 안 될 때가 있다.<br>나는 html 파일이 맛이 가서 안 된다고 메일만 20개 넘게 온 듯하다.<br>1분 넘으면 뭔가 문제가 있는 것이니 해결하자.
+
+---
+
+<br>
+
+## 5. 마치며
+
+드디어 github에 블로그를 개설했다.<br>많이 힘들었지만, 어느 정도 해결할 수 있어서 좋았다.<br>많은 블로그들을 돌아다니면서 공부해서 좋았다.
+
+
+
+---
+
+<br>
+
+## 그 동안 참고한 페이지들
+
+#### 주요 참고
+
+- https://jekyllrb-ko.github.io/: 지킬 공식 한국어 홈피.
+
+- https://github.com/TaylanTatli/Moon: 기본 테마.
+
+- https://nachwon.github.io/: 다중 nav 참고. 수록 포스팅 들도 괜찮았던 블로그.
+
+- https://cropius.github.io/: sns 아이콘 정리에 도움.
+
+- https://wayhome25.github.io/: search 기능 제작에 큰 도움.
+
+  <br>
+
+#### 살짝 참고
+
+- http://dmcwo.github.io/Notebook-Moon//: 폰트도 바꿔보면 좋겠다는 생각.
+- https://evasivepangolin.github.io/midtndsa//: 홈 화면을 깔끔하게 만들어서 신선.
+- https://rodriguez-r.com/: 최근 게시물을 올리는 것이 재미있어 보였다. 근데 나한텐 더러워보여
+- http://blog.knowgari.com/categories/Ajax/: 카테고리 페이지를 따로 만들어서 좋아보였다. 근데 모바일에선 적용이 되질 않아서 가져오진 않았다.
+- http://labs.brandi.co.kr/2018/05/14/chunbs.html: admin 기능을 소개해줬는데, 딱히 내게 많은 편의를 주는 기능은 아니었다. 저자 기능이 있으니 한 번 추가하고 싶다면 가도 좋다.
+- http://jihyeleee.com/blog/second-designer-can-make-jekyll-blog/: 내가 git을 잘 사용하지 못해서 나중에 더 참고하면 좋아보인다.
+
+- 그 외 기본 테마에 fork해서 내게 영감을 준 블로그들.
