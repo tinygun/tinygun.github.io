@@ -5,6 +5,16 @@ description: "An archive of posts sorted by category."
 comments: false
 ---
 
+<!--see tag-->
+<h4>
+  <i class="fa fa-refresh">&nbsp;&nbsp;</i>
+  <a href="{{ site.url }}/tags">
+    tag로 찾기
+  </a>
+</h4>
+
+<script data-ad-client="ca-pub-3716037518769177" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
 {% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign categories_list = site_categories | split:',' | sort %}
 
@@ -31,4 +41,3 @@ comments: false
     </ul>
     </article><!-- /.hentry -->
 {% endunless %}{% endfor %}
-

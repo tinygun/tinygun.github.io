@@ -65,7 +65,7 @@ git push -u origin master
 
 ## 3. 검색기능 활성화
 
-참고: https://wayhome25.github.io/
+참고: [https://wayhome25.github.io/](https://wayhome25.github.io/)
 
 이제 호스팅을 했으니 깡통으로 만든 검색창에 기능을 추가하고자 한다.
 

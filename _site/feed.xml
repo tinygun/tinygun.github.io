@@ -1,61 +1,144 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-12-26T15:08:16+09:00</updated><id>/</id><title type="html">NLP Study</title><subtitle>tinygun's blog</subtitle><entry><title type="html">블로그 갖고 싶어 시작한 jekyll(3)</title><link href="/jekyll_guide_3/" rel="alternate" type="text/html" title="블로그 갖고 싶어 시작한 jekyll(3)" /><published>2019-12-26T12:00:00+09:00</published><updated>2019-12-26T12:00:00+09:00</updated><id>/jekyll_guide_3</id><content type="html" xml:base="/jekyll_guide_3/">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://tinygun.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://tinygun.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tinygun.github.io/" rel="alternate" type="text/html" /><updated>2019-12-26T23:48:38+09:00</updated><id>https://tinygun.github.io/</id><title type="html">NLP Study</title><subtitle>tinygun's blog</subtitle><entry><title type="html">블로그 갖고 싶어 시작한 jekyll(3)</title><link href="https://tinygun.github.io/jekyll_guide_3/" rel="alternate" type="text/html" title="블로그 갖고 싶어 시작한 jekyll(3)" /><published>2019-12-26T12:00:00+09:00</published><updated>2019-12-26T12:00:00+09:00</updated><id>https://tinygun.github.io/jekyll_guide_3</id><content type="html" xml:base="https://tinygun.github.io/jekyll_guide_3/">&lt;hr /&gt;
 
 &lt;h2 id=&quot;1-블로그-호스팅&quot;&gt;&lt;strong&gt;1. 블로그 호스팅&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;구글 기능들을 블로그에 박기 위해 세상에 드러낼 필요가 있다.&lt;br /&gt;이런 저질 블로그를 올려도 되는지 걱정될 수 있으나, 걱정할 필요가 없다.&lt;br /&gt;구글에서 검색이 가능하려면 &lt;a href=&quot;https://wayhome25.github.io/etc/2017/02/20/google-search-sitemap-jekyll/&quot;&gt;추가적 절차&lt;/a&gt;가 필요하다.&lt;br /&gt;이건 그냥 호스팅일 뿐.&lt;/p&gt;
 
-&lt;p&gt;우선 github에 자신 주소로 사용할 이름의 저장소를 만들자.&lt;br /&gt;나는 &lt;strong&gt;&lt;a href=&quot;https://github.com/tinygun/tinygun.github.io&quot;&gt;tinygun.github.io&lt;/a&gt;&lt;/strong&gt; 라고 만들었다.&lt;br /&gt;보통 이렇게 하는 이유는 잘 모르겠는데,&lt;br /&gt;가끔 호스팅이 불안정해서 404 뜨는 블로그들이 있어서 그런가 생각한다.&lt;/p&gt;
+&lt;p&gt;우선 github에 자신 주소로 사용할 이름의 저장소를 만들자.&lt;br /&gt;나는 &lt;strong&gt;&lt;a href=&quot;https://github.com/tinygun/tinygun.github.io&quot;&gt;tinygun.github.io&lt;/a&gt;&lt;/strong&gt; 라고 만들었다.&lt;br /&gt;이렇게 해야 호스팅이 된다고 한다.&lt;br /&gt;미리 이름을 정하고 만들면 404 뜨는 듯하다.&lt;/p&gt;
 
-&lt;p&gt;원래 귀찮아서 github에 드래그로 옮길라고 했다.&lt;br /&gt;어차피 최초 버전이라 버전 관리가 필요없으니까.&lt;/p&gt;
-
-&lt;p&gt;그런데 파일이 100개 이상이라서 안 올라간다.&lt;br /&gt;&lt;a href=&quot;https://gitforwindows.org/&quot;&gt;git&lt;/a&gt; 으로 그냥 올려야겠다.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-theme-설정&quot;&gt;&lt;strong&gt;1. Theme 설정&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;좋은 테마를 찾았다. &lt;a href=&quot;https://github.com/TaylanTatli/Moon&quot;&gt;Moon&lt;/a&gt; 이라는 테마다.&lt;br /&gt;좌측 상단에 게시판 링크를 고정한 것이 마음에 든다.&lt;br /&gt;2019.12.24 기준으로 내 블로그 테마다.&lt;/p&gt;
-
-&lt;p&gt;테마를 받은 후, &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;이라는 파일을 변경해야 한다.&lt;br /&gt;주로 바꿀 부분은 다음과 같다.&lt;/p&gt;
-
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;title:	NLP Study
-bio:	'Learn Korean NLP'
-url:	127.0.0.1:4000
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;자기 블로그 간판, 설명, 주소를 적으면 된다.&lt;br /&gt;지금은 jekyll 작동 시험중이라 주소를 로컬로 적어놨다.&lt;/p&gt;
-
-&lt;p&gt;왠지 모르겠는데 여기 한글이 들어가면 작동을 안한다.&lt;br /&gt;로컬에서만 그러고 github에서는 괜찮은 듯하다.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 파일은 어떤 테마든 다 존재하는 환경설정 파일이다.&lt;br /&gt;이 파일의 수정내역은 jekyll 재시작 후 반영된다.&lt;br /&gt;배경이나 사진이 안 바뀐다고 혼란스러워 하지 말자. &lt;del&gt;내가 혼란에 빠졌다.&lt;/del&gt;&lt;/p&gt;
-
-&lt;p&gt;p.s. &lt;br /&gt;나는 Moon 테마로 jekyll을 돌리면 루비 콘솔에서&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;BigDecimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deprecated&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;BigDecimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instead&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;라고 자꾸 경고 메시지를 날렸다. &lt;br /&gt;콘솔에 문제있다고 하는 파일 경로가 뜬다.&lt;br /&gt;메모장 같은거로 파일을 열어서 &lt;code class=&quot;highlighter-rouge&quot;&gt;BigDecimal.new&lt;/code&gt; 라고 된 부분에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;.new&lt;/code&gt; 부분을 지웠다.&lt;br /&gt;jekyll을 재시작하니 다시는 나타나지 않았다.&lt;br /&gt;루비를 잘 모르지만, 아마 루비 버전에 따른 명령어 변화가 아닐까 싶다.&lt;/p&gt;
+&lt;p&gt;원래 귀찮아서 github에 드래그로 옮길라고 했다.&lt;br /&gt;그런데 파일이 100개 이상이라서 안 올라간다.&lt;br /&gt;나중에 관리상 문제도 있어서 &lt;a href=&quot;https://gitforwindows.org/&quot;&gt;git&lt;/a&gt; 으로 올린다.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;2-기능-추가-리스트&quot;&gt;&lt;strong&gt;2. 기능 추가 리스트&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;2-간단한-git-사용법&quot;&gt;&lt;strong&gt;2. 간단한 git 사용법&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;이제 내가 원하는 기능을 추가할 것이다.&lt;br /&gt;추가하고 싶은 리스트는 다음과 같다.&lt;/p&gt;
+&lt;p&gt;다른 분들 검색하면 잘 나오긴 하지만, 그냥 편하게 여기다 쓴다.&lt;br /&gt;완전 처음일 경우를 가정한다.&lt;/p&gt;
+
+&lt;p&gt;Windows 기준으로 &lt;a href=&quot;https://git-scm.com/&quot;&gt;git bash&lt;/a&gt; 실행 후, 블로그 작업 폴더에 들어가서 다음과 같이 실행한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
+git add .
+
+git config --global user.name &quot;username&quot;
+git config --global user.email &quot;username@example.com&quot;
+
+git commit -m &quot;first commit&quot;
+git remote add origin &quot;https://github.com/username/username.github.io.git&quot;
+
+git config --global http.postBuffer 20971520
+
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;(1) git에 필요한 파일을 만든다.&lt;br /&gt;(2) 자기 신원을 적어둔다.&lt;br /&gt;(3) 저장소에 연결한다.&lt;br /&gt;(4) 파일 전송 크기를 조정한다. (선택사항)&lt;br /&gt;(5) github에 올린다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;나중에 파일을 수정하고 다시 올릴 때는 이러면 된다.&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
+git commit -m &quot;수정내용&quot;
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;확인해보면 github에 잘 올라가있다.&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 파일에서 자기가 지정한 주소로 접속하면 변경사항이 바로 안 뜰 수도 있다.&lt;br /&gt;길게는 1분 정도 있어야 변경사항이 적용된다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-검색기능-활성화&quot;&gt;3. 검색기능 활성화&lt;/h2&gt;
+
+&lt;p&gt;참고: &lt;a href=&quot;https://wayhome25.github.io/&quot;&gt;https://wayhome25.github.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;이제 호스팅을 했으니 깡통으로 만든 검색창에 기능을 추가하고자 한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;(1) 인증&lt;/p&gt;
+
+&lt;p&gt;구글에 검색이 가능하도록 &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;인증&lt;/code&gt;&lt;/strong&gt;을 먼저 진행한다.&lt;br /&gt;&lt;a href=&quot;https://search.google.com/search-console/welcome?hl=ko&amp;amp;utm_source=wmx&amp;amp;utm_medium=deprecation-pane&amp;amp;utm_content=home&quot;&gt;Search Console&lt;/a&gt;로 들어가보자.&lt;/p&gt;
+
+&lt;p&gt;첫 화면 입력창에 자기 블로그 주소를 넣어주면  html을 받을 수 있다.&lt;br /&gt;창은 나중에 꺼두자.&lt;br /&gt;이걸 받고 github에 올려준 뒤 html 받던 창에서 확인을 눌러준다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;(2) sitemap 제출&lt;/p&gt;
+
+&lt;p&gt;그 후, &lt;code class=&quot;highlighter-rouge&quot;&gt;sitemap.xml&lt;/code&gt; 파일을 만들어야 한다.&lt;br /&gt;난 &lt;a href=&quot;https://github.com/wayhome25/wayhome25.github.io/blob/master/sitemap.xml&quot;&gt;이 분&lt;/a&gt; 것을 그대로 복사했다.&lt;br /&gt;만들어 준 뒤 다시 github에 올려준다.&lt;br /&gt;Search Console을 다시 들어가보면, 왼쪽에 &lt;code class=&quot;highlighter-rouge&quot;&gt;색인-Sitemaps&lt;/code&gt; 부분이 있다.&lt;br /&gt;여기 들어간 뒤 상단에 &lt;code class=&quot;highlighter-rouge&quot;&gt;sitemap.xml&lt;/code&gt; 쓰고 사이트맵 추가하면 끝난다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-검색기능-추가&quot;&gt;4. 검색기능 추가&lt;/h2&gt;
+
+&lt;p&gt;드디어 검색기능을 활성화 시켰다.&lt;br /&gt;이제 &lt;a href=&quot;https://cse.google.co.kr/cse/&quot;&gt;구글 맞춤검색&lt;/a&gt;으로 들어가보자.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;a href=&quot;\posts_image\jekyll_guide\googlesearch.JPG&quot;&gt;&lt;img src=&quot;\posts_image\jekyll_guide\googlesearch.JPG&quot; /&gt;&lt;/a&gt;
+    &lt;figcaption&gt;&lt;center&gt;&lt;b&gt;맞춤검색 엔진 사이트&lt;/b&gt;&lt;/center&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;만들기 들어가서 자기 주소에 대한 검색엔진을 만들어보자.&lt;/p&gt;
+
+&lt;p&gt;검색엔진 수정을 통해 약간 수정한 뒤 &lt;code class=&quot;highlighter-rouge&quot;&gt;코드생성&lt;/code&gt;이 있다.&lt;br /&gt;해당 코드를 웹페이지에 추가하면 된다.&lt;br /&gt;나는 layout 중 page를 기반으로 search의 index.html을 수정했다.&lt;/p&gt;
+
+&lt;p&gt;검색이 되려면, 좀 오래 걸린다고 들었다.&lt;br /&gt;언젠가 될 때를 기약하자.&lt;/p&gt;
+
+&lt;p&gt;가끔 블로그 업데이트가 안 될 때가 있다.&lt;br /&gt;나는 html 파일이 맛이 가서 안 된다고 메일만 20개 넘게 온 듯하다.&lt;br /&gt;1분 넘으면 뭔가 문제가 있는 것이니 해결하자.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-마치며&quot;&gt;5. 마치며&lt;/h2&gt;
+
+&lt;p&gt;드디어 github에 블로그를 개설했다.&lt;br /&gt;많이 힘들었지만, 어느 정도 해결할 수 있어서 좋았다.&lt;br /&gt;많은 블로그들을 돌아다니면서 공부해서 좋았다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;그-동안-참고한-페이지들&quot;&gt;그 동안 참고한 페이지들&lt;/h2&gt;
+
+&lt;h4 id=&quot;주요-참고&quot;&gt;주요 참고&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;게시판&lt;/li&gt;
-  &lt;li&gt;검색기능&lt;/li&gt;
-  &lt;li&gt;사용자 집계&lt;/li&gt;
-  &lt;li&gt;&lt;del&gt;google 광고&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://jekyllrb-ko.github.io/&quot;&gt;https://jekyllrb-ko.github.io/&lt;/a&gt;: 지킬 공식 한국어 홈피.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/TaylanTatli/Moon&quot;&gt;https://github.com/TaylanTatli/Moon&lt;/a&gt;: 기본 테마.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://nachwon.github.io/&quot;&gt;https://nachwon.github.io/&lt;/a&gt;: 다중 nav 참고. 수록 포스팅 들도 괜찮았던 블로그.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://wayhome25.github.io/&quot;&gt;https://wayhome25.github.io/&lt;/a&gt;: search 기능 제작에 큰 도움.&lt;/p&gt;
+
+    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;우선 레이아웃을 짜보자.&lt;br /&gt;현재 사용하는 Moon 테마는 Home, Project 같은 별도 공간이 존재한다.&lt;br /&gt;Posts 에서는 All Posts, All Tags로 볼 수 있는 편의를 제공한다.&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;살짝-참고&quot;&gt;살짝 참고&lt;/h4&gt;
 
-&lt;p&gt;우선 다른 사람들이 어떻게 만들었는지 보면서 살펴보는게 편해보인다.&lt;/p&gt;
-
-&lt;hr /&gt;</content><category term="etc" /><category term="jekyll" /><category term="github" /><summary type="html">블로그 호스팅 절차 및 Jekyll 검색기능 등 추가 기능 생성.</summary></entry><entry><title type="html">블로그 갖고 싶어 시작한 jekyll(2)</title><link href="/jekyll_guide_2/" rel="alternate" type="text/html" title="블로그 갖고 싶어 시작한 jekyll(2)" /><published>2019-12-24T09:00:00+09:00</published><updated>2019-12-24T09:00:00+09:00</updated><id>/jekyll_guide_2</id><content type="html" xml:base="/jekyll_guide_2/">&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cropius.github.io/&quot;&gt;https://cropius.github.io/&lt;/a&gt;: sns 아이콘 정리에 도움.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://dmcwo.github.io/Notebook-Moon//&quot;&gt;http://dmcwo.github.io/Notebook-Moon//&lt;/a&gt;: 폰트도 바꿔보면 좋겠다는 생각.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://evasivepangolin.github.io/midtndsa//&quot;&gt;https://evasivepangolin.github.io/midtndsa//&lt;/a&gt;: 홈 화면을 깔끔하게 만들어서 신선.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://rodriguez-r.com/&quot;&gt;https://rodriguez-r.com/&lt;/a&gt;: 최근 게시물을 올리는 것이 재미있어 보였다. 근데 나한텐 더러워보여&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.knowgari.com/categories/Ajax/&quot;&gt;http://blog.knowgari.com/categories/Ajax/&lt;/a&gt;: 카테고리 페이지를 따로 만들어서 좋아보였다. 근데 모바일에선 적용이 되질 않아서 가져오진 않았다.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://labs.brandi.co.kr/2018/05/14/chunbs.html&quot;&gt;http://blog.knowgari.com/categories/Ajax/&lt;/a&gt;: admin 기능을 소개해줬는데, 딱히 내게 많은 편의를 주는 기능은 아니었다. 저자 기능이 있으니 한 번 추가하고 싶다면 가도 좋다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://jihyeleee.com/blog/second-designer-can-make-jekyll-blog/&quot;&gt;http://jihyeleee.com/blog/second-designer-can-make-jekyll-blog/&lt;/a&gt;: 내가 git을 잘 사용하지 못해서 나중에 더 참고하면 좋아보인다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;그 외 기본 테마에 &lt;a href=&quot;https://github.com/TaylanTatli/Moon/network/members&quot;&gt;fork&lt;/a&gt; 해서 내게 영감을 준 블로그들.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="etc" /><category term="jekyll" /><category term="github" /><summary type="html">블로그 호스팅 절차 및 Jekyll 검색기능 등 추가 기능 생성.</summary></entry><entry><title type="html">블로그 갖고 싶어 시작한 jekyll(2)</title><link href="https://tinygun.github.io/jekyll_guide_2/" rel="alternate" type="text/html" title="블로그 갖고 싶어 시작한 jekyll(2)" /><published>2019-12-24T09:00:00+09:00</published><updated>2019-12-24T09:00:00+09:00</updated><id>https://tinygun.github.io/jekyll_guide_2</id><content type="html" xml:base="https://tinygun.github.io/jekyll_guide_2/">&lt;hr /&gt;
 
 &lt;h2 id=&quot;1-theme-설정&quot;&gt;&lt;strong&gt;1. Theme 설정&lt;/strong&gt;&lt;/h2&gt;
 
@@ -147,13 +230,13 @@ url:	127.0.0.1:4000
 
 &lt;p&gt;원본&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tinygun.github.io/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;변형&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fa fa-home&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;color:#808080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;nbsp;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/i&amp;gt;&lt;/span&gt;Main&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tinygun.github.io/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fa fa-home&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;color:#808080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;nbsp;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/i&amp;gt;&lt;/span&gt;Main&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -174,8 +257,8 @@ url:	127.0.0.1:4000
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Posts&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;	
 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dl-submenu&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/posts/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;All Posts&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/tags/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;All Tags&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tinygun.github.io/posts/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;All Posts&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tinygun.github.io/tags/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;All Tags&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -190,12 +273,12 @@ url:	127.0.0.1:4000
 			&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fa fa-list&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;color:#808080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;nbsp;&amp;amp;nbsp;&lt;/span&gt;Boards&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
 			&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dl-submenu&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 				&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
-					&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/posts/etc/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;etc&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 게시판 부분--&amp;gt;&lt;/span&gt;&amp;gt;
+					&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tinygun.github.io/posts/etc/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;etc&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 게시판 부분--&amp;gt;&lt;/span&gt;&amp;gt;
 				&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 			&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 		&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/tags/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fa fa-tags&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;color:#808080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;nbsp;&amp;amp;nbsp;&lt;/span&gt;tags&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/posts/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fa fa-globe&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;color:#808080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;nbsp;&amp;amp;nbsp;&lt;/span&gt;All&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tinygun.github.io/tags/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fa fa-tags&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;color:#808080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;nbsp;&amp;amp;nbsp;&lt;/span&gt;tags&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tinygun.github.io/posts/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fa fa-globe&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;color:#808080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;nbsp;&amp;amp;nbsp;&lt;/span&gt;All&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -240,7 +323,7 @@ url:	127.0.0.1:4000
 
 &lt;p&gt;검색기능을 만들기 위해서는 _layout 폴더에 해당 기능 레이아웃이 있어야 한다.&lt;br /&gt;여기서는 page를 기반으로 검색기능을 넣으면 될 듯 하다. &lt;br /&gt;&lt;span style=&quot;color:#F0F0F0&quot;&gt;&lt;del&gt;지금이라도 쉽다고 한 사기꾼 잡아와야 한다니까&lt;/del&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://wayhome25.github.io/etc/2017/02/23/blog-search/&quot;&gt;검색기능 추가&lt;/a&gt;는 금방 만들 수 있어보인다.&lt;br /&gt;나는 &lt;span style=&quot;color:#F0F0F0&quot;&gt;&lt;del&gt;푼돈&lt;/del&gt;&lt;/span&gt;편의를 위해 구글 맞춤 검색을 이용할 것이다.&lt;br /&gt;다만, 구글 맞춤 검색의 경우, 정식 호스팅 후에 구동이 가능해서 나중에 하도록 한다.&lt;/p&gt;</content><category term="etc" /><category term="jekyll" /><category term="github" /><summary type="html">Jekyll 테마 &quot;Moon&quot; 적용, 게시판 생성 및 페이지 커스터마이징.</summary></entry><entry><title type="html">블로그 갖고 싶어 시작한 jekyll(1)</title><link href="/jekyll_guide_1/" rel="alternate" type="text/html" title="블로그 갖고 싶어 시작한 jekyll(1)" /><published>2019-12-20T22:15:00+09:00</published><updated>2019-12-20T22:15:00+09:00</updated><id>/jekyll_guide_1</id><content type="html" xml:base="/jekyll_guide_1/">&lt;h2 id=&quot;1-github-블로그-시작&quot;&gt;&lt;strong&gt;1. github 블로그 시작&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://wayhome25.github.io/etc/2017/02/23/blog-search/&quot;&gt;검색기능 추가&lt;/a&gt;는 금방 만들 수 있어보인다.&lt;br /&gt;나는 &lt;span style=&quot;color:#F0F0F0&quot;&gt;&lt;del&gt;푼돈&lt;/del&gt;&lt;/span&gt;편의를 위해 구글 맞춤 검색을 이용할 것이다.&lt;br /&gt;다만, 구글 맞춤 검색의 경우, 정식 호스팅 후에 구동이 가능해서 나중에 하도록 한다.&lt;/p&gt;</content><category term="etc" /><category term="jekyll" /><category term="github" /><summary type="html">Jekyll 테마 &quot;Moon&quot; 적용, 게시판 생성 및 페이지 커스터마이징.</summary></entry><entry><title type="html">블로그 갖고 싶어 시작한 jekyll(1)</title><link href="https://tinygun.github.io/jekyll_guide_1/" rel="alternate" type="text/html" title="블로그 갖고 싶어 시작한 jekyll(1)" /><published>2019-12-20T22:15:00+09:00</published><updated>2019-12-20T22:15:00+09:00</updated><id>https://tinygun.github.io/jekyll_guide_1</id><content type="html" xml:base="https://tinygun.github.io/jekyll_guide_1/">&lt;h2 id=&quot;1-github-블로그-시작&quot;&gt;&lt;strong&gt;1. github 블로그 시작&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;공부하다 보니 코드를 보기 쉽게 정리해둘 필요성을 느꼈다.&lt;br /&gt;주석을 간단히 달아두는 정도로는 보기 너무 불편했다.&lt;br /&gt;그래서 생각한 것이 블로그였다.&lt;br /&gt;하지만 기존 블로그들은 뭔가 마음에 들지 않았을 때 보인 블로그 형식이 바로,&lt;br /&gt;&lt;/p&gt;
 
@@ -389,7 +472,7 @@ url:	127.0.0.1:4000
 
 &lt;p&gt;다음을 기약하며 빠른 수면을 택했다. &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;color:#F0F0F0&quot;&gt;&lt;del&gt;다시 말하지만 쉽다고 한 사기꾼 잡아와라 이 놈들아&lt;/del&gt;&lt;/span&gt;&lt;/p&gt;</content><category term="etc" /><category term="jekyll" /><category term="github" /><summary type="html">Github 블로그 갖기 위한 여정</summary></entry><entry><title type="html">First test</title><link href="/hello/" rel="alternate" type="text/html" title="First test" /><published>2019-12-14T00:00:00+09:00</published><updated>2019-12-14T00:00:00+09:00</updated><id>/hello</id><content type="html" xml:base="/hello/">&lt;p&gt;첫 문서 테스트 중.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;color:#F0F0F0&quot;&gt;&lt;del&gt;다시 말하지만 쉽다고 한 사기꾼 잡아와라 이 놈들아&lt;/del&gt;&lt;/span&gt;&lt;/p&gt;</content><category term="etc" /><category term="jekyll" /><category term="github" /><summary type="html">Github 블로그 갖기 위한 여정</summary></entry><entry><title type="html">First test</title><link href="https://tinygun.github.io/hello/" rel="alternate" type="text/html" title="First test" /><published>2019-12-14T00:00:00+09:00</published><updated>2019-12-14T00:00:00+09:00</updated><id>https://tinygun.github.io/hello</id><content type="html" xml:base="https://tinygun.github.io/hello/">&lt;p&gt;첫 문서 테스트 중.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-코드&quot;&gt;1. 코드&lt;/h2&gt;
 
