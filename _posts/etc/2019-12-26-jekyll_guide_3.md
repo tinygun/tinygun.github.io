@@ -49,6 +49,35 @@ git push -u origin master
 
 (1) git에 필요한 파일을 만든다.<br>(2) 자기 신원을 적어둔다.<br>(3) 저장소에 연결한다.<br>(4) 파일 전송 크기를 조정한다. (선택사항)<br>(5) github에 올린다.
 
+<br>
 
+나중에 파일을 수정하고 다시 올릴 때는 이러면 된다.
 
+```markdown
+git add .
+git commit -m "수정내용"
+git push -u origin master
+```
 
+확인해보면 github에 잘 올라가있다.<br>`_config.yml` 파일에서 자기가 지정한 주소로 접속하면 변경사항이 바로 안 뜰 수도 있다.<br>길게는 1분 정도 있어야 변경사항이 적용된다.
+
+---
+
+<br>
+
+## 3. 검색기능 추가하기
+
+참고: https://wayhome25.github.io/
+
+이제 호스팅을 했으니 깡통으로 만든 검색창에 기능을 추가하고자 한다.<br>구글에 검색이 가능하도록 인증을 먼저 진행한다.<br>[Search Console](https://search.google.com/search-console/welcome?hl=ko&utm_source=wmx&utm_medium=deprecation-pane&utm_content=home)로 들어가보자.
+
+<br>
+
+[구글 맞춤검색](https://cse.google.co.kr/cse/)으로 들어가보자.<br>
+
+<figure>
+    <a href="\posts_image\jekyll_guide\googlesearch.JPG"><img src="\posts_image\jekyll_guide\googlesearch.JPG"></a>
+    <figcaption><center><b>맞춤검색 엔진 사이트</b></center></figcaption>
+</figure>
+
+만들기 들어가서 자기 주소에 대한 검색엔진을 만들어보자.
