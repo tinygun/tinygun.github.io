@@ -59,7 +59,7 @@ comments: true
 <span style="color:#ff0000">여기서는 주의할 점이 있다.</span><br>`_config.yml` 에 적었던 url 그대로 적어야 한다.<br>나는 https://tinygun.github.io 에다 `/` 를 붙여서 적었는데, <br>알고 보니 내 주소는 마지막 `/` 가 없어서 댓글 활성화가 안 됐다.
 
 <figure> 
-    <a href="\posts_image\jekyll_guide\disqus_set.JPG"><img src="\posts_image\jekyll_guide\disqus_set.JPG"></a>
+    <a href="\posts_image\jekyll_guide\disqus_act.JPG"><img src="\posts_image\jekyll_guide\disqus_act.JPG"></a>
     <figcaption><center><b>결국 댓글 활성화</b></center></figcaption>
 </figure>
 
