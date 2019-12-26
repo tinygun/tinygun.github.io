@@ -71,7 +71,9 @@ git push -u origin master
 
 이제 호스팅을 했으니 깡통으로 만든 검색창에 기능을 추가하고자 한다.<br>구글에 검색이 가능하도록 인증을 먼저 진행한다.<br>[Search Console](https://search.google.com/search-console/welcome?hl=ko&utm_source=wmx&utm_medium=deprecation-pane&utm_content=home)로 들어가보자.
 
-<br>
+첫 화면 입력창에 자기 블로그 주소를 넣어주면  html을 받을 수 있다.<br>창은 나중에 꺼두자.<br>이걸 받고 github에 올려준 뒤 html 받던 창에서 확인을 눌러준다.
+
+그 후, `site.xml` 파일을 만들어야 한다.<br>난 [이 분](https://github.com/wayhome25/wayhome25.github.io/blob/master/sitemap.xml) 것을 그대로 복사했다.
 
 [구글 맞춤검색](https://cse.google.co.kr/cse/)으로 들어가보자.<br>
 
