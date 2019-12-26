@@ -49,7 +49,9 @@ comments: true
     <figcaption><center><b>인스톨 사항</b></center></figcaption>
 </figure>
 
-필요한 layout에 `comments: true`를 달아주면 default 값으로 사용할 수 있다.<br>2번에 `Universal Embed Code`라고 나온 부분은 잘 모르겠다.<br>따로 설치해야하는 건가;;
+필요한 layout에 `comments: true`를 달아주면 default 값으로 사용할 수 있다.<br>나는 ~~뻘~~글 쓸 때 쓰는 layout인 `post.html`에 달아줬다.
+
+2번에 `Universal Embed Code`라고 나온 부분은 잘 모르겠다.<br>따로 설치해야하는 건가;;
 
 <figure> 
     <a href="\posts_image\jekyll_guide\disqus_set.JPG"><img src="\posts_image\jekyll_guide\disqus_set.JPG"></a>
