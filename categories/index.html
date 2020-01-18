@@ -19,7 +19,7 @@ comments: false
 <ul class="entry-meta inline-list">
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
-    <li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span><span class="count">{{ site.categories[this_word].size }}</span></a></li>
+    <li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.categories[this_word].size }}</span></a></li>
   {% endunless %}{% endfor %}
 </ul>
 
@@ -32,9 +32,10 @@ comments: false
     <ul>
         {% for post in site.categories[this_word] %}{% if post.title != null %}
         <li class="entry-title">
-        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
-            {{ post.title }}&nbsp;<small class="post-date">{{ post.date | date_to_string }}</small>
-        </a></li>
+            <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+                {{ post.title }}&nbsp;<small class="post-date">{{ post.date | date_to_string }}</small>
+            </a>
+        </li>
         {% endif %}{% endfor %}
     </ul>
     </article><!-- /.hentry -->
