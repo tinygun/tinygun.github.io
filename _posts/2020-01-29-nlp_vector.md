@@ -108,6 +108,8 @@ Deep Averaging Network(Iyyer et al., 2015)는 백오브워즈 가정의 뉴럴 �
     <figcaption><center><b>Deep Averaging Network</b></center></figcaption>
 </figure>
 
+
+
 위 사례는 `Predator is a masterpiece`라는 문장의 임베딩을 4개의 토큰으로 구분하였다.<br>일반 뉴럴 네트워크와 다른 점은, sequence 데이터로 취급하지 않고 빈도만 따진다는 점이다.<br>이 점에서 백오브워즈와 비슷하다고 한다.
 
 빈도만으로 문장 임베딩을 한 뒤 해당 문서가 어떤 범주인지 분류하는 모델이다.<br>간단한 구조임에도 불구하고 성능이 좋아서 현업에도 자주 쓰인다고 한다.
