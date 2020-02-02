@@ -2,7 +2,7 @@
 title: NLP_한국어 임베딩(2019) 2장 정리
 layout: post
 date: '2020-01-29 18:00:00'
-excerpt: 벡터와 자연어: 숫자가 의미를 갖는 과정
+excerpt: 벡터와 자연어-숫자가 의미를 갖는 과정
 tag:
 - nlp
 - tf-idf
@@ -104,7 +104,7 @@ $$
 Deep Averaging Network(Iyyer et al., 2015)는 백오브워즈 가정의 뉴럴 네트워크 버전이다.<br>
 
 <figure>
-    <a href="https://i1.wp.com/mlexplained.com/wp-content/uploads/2018/05/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2018-05-10-13.29.52.png?w=366&ssl=1"><center><img src="https://i1.wp.com/mlexplained.com/wp-content/uploads/2018/05/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2018-05-10-13.29.52.png?w=366&ssl=1"><center></a>
+    <center><img src="https://i1.wp.com/mlexplained.com/wp-content/uploads/2018/05/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2018-05-10-13.29.52.png?w=366&ssl=1"></center>
     <figcaption><center><b>Deep Averaging Network</b></center></figcaption>
 </figure>
 
