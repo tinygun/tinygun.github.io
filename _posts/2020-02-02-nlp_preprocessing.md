@@ -3,12 +3,8 @@ title: NLP_한국어 임베딩(2019) 3장 정리
 layout: post
 date: '2020-02-02 18:00:00'
 excerpt: 한국어 데이터의 전처리 과정
-tag:
-- nlp
-- mecab
-- khaiii
-- konlpy
-category: nlp
+tags: nlp mecab khaiii konlpy
+categories: nlp
 comments: true
 ---
 

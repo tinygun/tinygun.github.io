@@ -3,10 +3,8 @@ layout: post
 title: 블로그 갖고 싶어 시작한 jekyll(1)
 date: '2019-12-20 22:15:00'
 excerpt: "Github 블로그 갖기 위한 여정"
-tag:
-- jekyll 
-- github
-category: jekyll
+tags: jekyll github
+categories: jekyll
 comments: true
 ---
 

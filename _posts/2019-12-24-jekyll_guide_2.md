@@ -3,10 +3,8 @@ title: 블로그 갖고 싶어 시작한 jekyll(2)
 layout: post
 date: '2019-12-24 09:00:00'
 excerpt: Jekyll 테마 "Moon" 적용, 게시판 생성 및 페이지 커스터마이징.
-tag:
-- jekyll
-- github
-category: jekyll
+tags: jekyll github
+categories: jekyll
 comments: true
 ---
 

@@ -3,10 +3,8 @@ title: 블로그 갖고 싶어 시작한 jekyll(3)
 layout: post
 date: '2019-12-26 12:00:00'
 excerpt: 블로그 호스팅 절차 및 Jekyll 검색기능 등 추가 기능 생성.
-tag:
-- jekyll
-- github
-category: jekyll
+tags: jekyll github
+categories: jekyll
 comments: true
 ---
 

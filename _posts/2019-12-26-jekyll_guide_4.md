@@ -3,11 +3,8 @@ title: jekyll 번외 - 댓글 생성하기
 layout: post
 date: '2019-12-26 23:00:00'
 excerpt: 댓글 기능 생성
-tag:
-- jekyll
-- github
-- disqus
-category: jekyll
+tags: jekyll github disqus
+categories: jekyll
 comments: true
 ---
 

@@ -3,12 +3,8 @@ title: NLP_한국어 임베딩(2019) 2장 정리
 layout: post
 date: '2020-01-29 18:00:00'
 excerpt: 벡터와 자연어, 숫자가 의미를 갖는 과정
-tag:
-- nlp
-- tf-idf
-- BoW
-- n-gram
-category: nlp
+tags: nlp tfidf BoW ngram
+categories: nlp
 comments: true
 ---
 
