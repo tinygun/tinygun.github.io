@@ -17,8 +17,8 @@ comments: true
 테마를 받은 후, `_config.yml`이라는 파일을 변경해야 한다.<br>주로 바꿀 부분은 다음과 같다.
 
 ```markdown
-title:	NLP Study
-bio:	'Learn Korean NLP'
+title:	Study & Store
+bio:	"Let's learn"
 url:	127.0.0.1:4000
 ```
 
@@ -26,7 +26,7 @@ url:	127.0.0.1:4000
 
 왠지 모르겠는데 여기 한글이 들어가면 작동을 안한다.<br>로컬에서만 그러고 github에서는 괜찮은 듯하다.
 
-`_config.yml` 파일은 어떤 테마든 다 존재하는 환경설정 파일이다.<br>이 파일의 수정내역은 jekyll 재시작 후 반영된다.<br>배경이나 사진이 안 바뀐다고 혼란스러워 하지 말자. ~~내가 혼란에 빠졌다.~~
+`_config.yml` 파일은 어떤 테마든 다 존재하는 환경설정 파일이다.<br>이 파일의 수정내역은 jekyll 재시작 후 반영된다.<br>배경이나 사진이 안 바뀐다고 혼란스러워 하지 말자.
 
 p.s. <br>나는 Moon 테마로 jekyll을 돌리면 루비 콘솔에서
 
@@ -84,7 +84,7 @@ BigDecimal.new is deprecated; use BigDecimal() method instead
 - /_layouts/post-list.html
 - /_includes/nav.html
 
-post-list.html 은 이해를 잘 못해서 참조 사이트 것을 그대로 복사했다.<br>~~정신이 쇠약해져~~ 지식이 부족하여 설명을 못하겠다.<br>이걸 안 해주면 나중에 게시판을 만들 수가 없다는 점만 말해두고 넘어가자.
+post-list.html 은 이해를 잘 못해서 참조 사이트 것을 그대로 복사했다.<br>정신이 쇠약하고 지식이 부족하여 설명을 못하겠다.<br>
 
 nav.html은 메뉴 영역을 담당하는 부분이다.<br>내가 바꾼 부분을 적당히 설명한다.
 
@@ -158,7 +158,7 @@ i 부분의 class는 favicon(favorite icon)을 넣은 것이다.<br>[fontawesome
 
 그냥 자동으로 카테고리별 게시판을 만들 수도 있어보이는데,<br>방법을 잘 몰라서 이렇게 해야겠다.
 
-p.s. 나중에 보니 게시판 추가가 잘 안 된다.<br>그냥 없애버릴까 생각한다.<br>~~그리고 진짜 없앴다.~~
+p.s. 나중에 보니 게시판 추가에 문제가 있어서 원상복구했다.
 
 ---
 
@@ -191,6 +191,6 @@ Home 화면 버튼 색깔의 경우, 테마 다운 받으면 있던 글들에 �
 
 검색기능을 만들기 위해서는 _layout 폴더에 해당 기능 레이아웃이 있어야 한다.<br>여기서는 page를 기반으로 검색기능을 넣으면 될 듯 하다. <br><span style="color:#F0F0F0">~~지금이라도 쉽다고 한 사기꾼 잡아와야 한다니까~~</span>
 
-[검색기능 추가](https://wayhome25.github.io/etc/2017/02/23/blog-search/)는 금방 만들 수 있어보인다.<br>나는 <span style="color:#F0F0F0">~~푼돈~~</span>편의를 위해 구글 맞춤 검색을 이용할 것이다.<br>다만, 구글 맞춤 검색의 경우, 정식 호스팅 후에 구동이 가능해서 나중에 하도록 한다.
+[검색기능 추가](https://wayhome25.github.io/etc/2017/02/23/blog-search/)는 금방 만들 수 있어보인다.<br>나는 편의를 위해 구글 맞춤 검색을 이용할 것이다.<br>다만, 구글 맞춤 검색의 경우, 정식 호스팅 후에 구동이 가능해서 나중에 하도록 한다.
 
 

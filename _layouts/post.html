@@ -9,6 +9,7 @@ comments: true
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
+    <title></title>
 </head>
 <body>
     {% include nav.html %}
@@ -19,23 +20,27 @@ comments: true
                 <div class="post-title {% if page.feature %} feature {% endif %}">
                     <h1>{{ page.title }}</h1>
                     <h4>{{ page.date | date_to_string }}</h4>
+
                     {% if site.reading_time %}
-                    <p class="reading-time">
-                      <i class="fa fa-clock-o"></i>
-                      {% include read-time.html %}
-                    </p><!-- /.entry-reading-time -->
+                        <p class="reading-time">
+                            <i class="fa fa-clock-o"></i>
+                            {% include read-time.html %}
+                        </p><!-- /.entry-reading-time -->
                     {% endif %}
-                    <a class="btn zoombtn" href="{{site.url}}/">
+
+                    <a class="btn zoom-btn" href="{{site.url}}/">
                         <i class="fa fa-home"></i>
-                    {% if page.project %}
-                    <a class="btn zoombtn" href="{{site.url}}/projects/">
-                    {% else %}
-                    <a class="btn zoombtn" href="{{site.url}}/categories/">
-                    {% endif %}
+                        {% if page.project %}
+                            <a class="btn zoom-btn" href="{{site.url}}/projects/">
+                        {% else %}
+                            <a class="btn zoom-btn" href="{{site.url}}/categories/">
+                        {% endif %}
                         <i class="fa fa-tags"></i>
                     </a>
                 </div>
+
                 {{ content }}
+
                 <div class="entry-meta">
                 {% include meta.html %}
                 </div>

@@ -1,7 +1,7 @@
 encoding: UTF-8
 # Site
-title:              NLP Study
-bio:                'Learn Korean NLP!'
+title:              Study & Store
+bio:                "Let's learn"
 description:        "tinygun's blog"
 reading_time:       true
 words_per_minute:   200
@@ -40,29 +40,11 @@ disqus_shortname:   tinygun
   #ad-slot:
 #bing-verify:
 email:	tinygun77@gmail.com
-#twitter:            username
-#facebook:           username
 github-url:         tinygun
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
-#xing:              username
-# instagram:          username
-#lastfm:            username
-#tumblr:            username
-#medium:            '@username'
-#pinterest:         username
-#foursquare:        username
-steam:              username
-#dribbble:          username
 #youtube:           username
 youtube-channel:   UCmnZSiv7bCJ2yCu4S_Tmvlg?view_as=subscriber
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
 
 # Gems
 gems:
@@ -76,3 +58,7 @@ jekyll-mentions:
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+
+category_archive:
+  type: liquid
+  path: /categories/

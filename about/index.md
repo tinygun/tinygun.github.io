@@ -6,15 +6,20 @@ date: 2019-12-25
 comments: false
 ---
 
-<center><a href="http://tinygun.github.io"><b>이곳</b></a>은 NLP 등 개인적인 공부 정리장입니다.</center>{: .notice}
-## 관심분야
+<center><a href="{{ site.url }}"><b>이곳</b></a>은 개인적인 공부 정리장입니다.</center>{: .notice}
+## Interests
 * History Data Analysis
 * Social Network Analysis
 * Natural Language Processing
 * Machine Learning
 * Linguistics
+* DevOps
 
-## 기타
+## Languages 
+* Python
+* Java
+
+## Etc.
 
 <figure class="half">
     <a href="/about/triangle.jpg"><img src="/about/triangle.jpg"></a>
@@ -26,8 +31,8 @@ comments: false
 
 
 
-## 링크
+## Links
 
-[My Home](https://tinygun.github.io/){: .btn.btn-success}
+[My Home]({{ site.url }}){: .btn.btn-success}
 
 [Theme origin](https://taylantatli.github.io/Moon/){: .btn}
