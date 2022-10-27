@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-10-26T10:17:19+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Study &amp;amp; Store</title><subtitle>tinygun&apos;s blog</subtitle><entry><title type="html">NLP_한국어 임베딩(2019) 3장 정리</title><link href="http://localhost:4000/nlp_preprocessing/" rel="alternate" type="text/html" title="NLP_한국어 임베딩(2019) 3장 정리" /><published>2020-02-02T18:00:00+09:00</published><updated>2020-02-02T18:00:00+09:00</updated><id>http://localhost:4000/nlp_preprocessing</id><content type="html" xml:base="http://localhost:4000/nlp_preprocessing/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-10-27T15:48:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Study &amp;amp; Store</title><subtitle>tinygun&apos;s blog</subtitle><entry><title type="html">1장 - Docker 설치</title><link href="http://localhost:4000/docker_1/" rel="alternate" type="text/html" title="1장 - Docker 설치" /><published>2022-10-27T15:00:00+09:00</published><updated>2022-10-27T15:00:00+09:00</updated><id>http://localhost:4000/docker_1</id><content type="html" xml:base="http://localhost:4000/docker_1/"><![CDATA[<p>※ 이 글은 <a href="https://wikibook.co.kr/docker-kube/">시작하세요! 도커/쿠버네티스(2020)</a> 책의 1장을 개인적으로 정리하고 잡다한 것들을 추가한 글입니다.<br /></p>
+
+<p>※ 예제코드는 <a href="https://wikibook.co.kr/docker-kube/">위키북스 링크</a>에서 확인할 수 있습니다.</p>
+
+<p><br /></p>
+
+<h2 id="1-들어가면서">1. 들어가면서</h2>
+
+<p>어떤 프로그램이든 설치하려면 시스템 호환, 의존성 등이 문제가 된다.<br />이것들이 다 충족되어도 버전관리 및 배포할 때마다 힘들다.<br />과거에는 VMWare 등 가상 머신을 사용했지만, 항상 시스템 자원을 일정량 소모하는 단점이 있다.</p>
+
+<p>이러한 문제점을 해결한 것이 프로세스 단위로 실행되는 컨테이너 개념이다.<br />가장 대표적인 것이 <strong>Docker</strong>다.</p>
+
+<p>도커는 리눅스 환경에 가장 최적화되어있지만, 나는 윈도우를 사용중이므로 WSL2 우분투를 사용할 것이다.<br />WSL는 자연어 처리할 때 mecab이 안돌아가던가 하는 문제가 있던 것으로 기억한다.<br />완전한 리눅스 환경을 구축한 것은 아니니, 테스트용이 아니라면 리눅스 따로 설치하는 것이 좋다.<br />WSL2에서 문제가 해결됐는지 몰라도, 도커 테스트용으로는 충분하므로 넘어가도록 한다.<br />리눅스 설치를 위한 포스트가 아니므로 필요하다면 <a href="https://gaesae.com/161">참조</a>위치 남겨둔 것으로 대체한다.</p>
+
+<p>프로그램을 도커로 운영할 일이 생겨서 학습차원으로 포스트 작성하게 되었다.<br />우분투 서버 환경에서 운영하기 때문에, GUI 툴을 사용하지 않고 커맨드 위주로 작성할 것이다.</p>
+
+<p><strong>환경</strong>: Windows 10, WSL2 Ubuntu 20.04.5 LTS</p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="2-docker설치">2. Docker설치</h2>
+
+<p>책이나 블로그에 많이들 적어놨지만, 오류 발생하는 경우가 많다.<br /><a href="https://docs.docker.com/engine/install/ubuntu/">공식 홈페이지</a> 들어가서 설치 당일에도 되는 명령어를 적어두자.<br />2022.10.27 기준 다음과 같다.</p>
+
+<ul>
+  <li>(기존에 설치한 경우) 이전 버전 삭제</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get remove docker docker-engine docker.io containerd runc
+</code></pre></div></div>
+
+<ul>
+  <li>관련 패키지 설치</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="se">\</span>
+    ca-certificates <span class="se">\</span>
+    curl <span class="se">\</span>
+    gnupg <span class="se">\</span>
+    lsb-release
+</code></pre></div></div>
+
+<ul>
+  <li>도커 공식 gpg 키 등록</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo mkdir</span> <span class="nt">-p</span> /etc/apt/keyrings
+<span class="nv">$ </span>curl <span class="nt">-fsSL</span> https://download.docker.com/linux/ubuntu/gpg | <span class="nb">sudo </span>gpg <span class="nt">--dearmor</span> <span class="nt">-o</span> /etc/apt/keyrings/docker.gpg
+</code></pre></div></div>
+
+<ul>
+  <li>저장소 세팅</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="se">\</span>
+  <span class="s2">"deb [arch=</span><span class="si">$(</span>dpkg <span class="nt">--print-architecture</span><span class="si">)</span><span class="s2"> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu </span><span class="se">\</span><span class="s2">
+  </span><span class="si">$(</span>lsb_release <span class="nt">-cs</span><span class="si">)</span><span class="s2"> stable"</span> | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/docker.list <span class="o">&gt;</span> /dev/null
+</code></pre></div></div>
+
+<ul>
+  <li>도커 설치</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>docker-ce docker-ce-cli containerd.io docker-compose-plugin
+</code></pre></div></div>
+
+<ul>
+  <li>서비스 실행 및 버전 확인</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>service docker start
+<span class="nv">$ </span>docker <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>WSL2 에서 sytemtctl 사용하려면 따로 설치하는 과정들이 있어서 sevice 명령으로 진행했다.<br />32비트, 구형 윈도우 등 구버전 환경만 아니라면 잘 돌아갈 것이다.<br /><del>애초에 WSL2 필요사양조차 충족하지 못했을 것</del></p>
+
+<hr />
+
+<p><br /></p>
+
+<h2 id="3-기타-방법">3. 기타 방법</h2>
+
+<p>우분투 CLI 환경 외, 사용할 수 있는 방법은 다음과 같다.</p>
+
+<ul>
+  <li>Docker Toolbox
+    <ul>
+      <li>가상 머신을 생성해 그 내부에 도커 설치</li>
+      <li>외부 접근 시, 호스트-가상머신 사이에 포트 포워딩 별도로 필요</li>
+    </ul>
+  </li>
+  <li>Docker for Windows/Mac
+    <ul>
+      <li>Linuxkit 사용하여 호스트 자체에 가상화 기술 적용
+        <ul>
+          <li>Windows: Hyper-V</li>
+          <li>Mac: whyve</li>
+        </ul>
+      </li>
+      <li>호스트의 포트포워딩 설정만으로 외부 접근 용이</li>
+    </ul>
+  </li>
+  <li>별도 Linux 환경
+    <ul>
+      <li>VirtualBox/VmWare
+        <ul>
+          <li>별도의 시스템 자원 소요.</li>
+        </ul>
+      </li>
+      <li>AWS EC2
+        <ul>
+          <li>클라우드 환경에서 제공받는 리눅스 환경</li>
+        </ul>
+      </li>
+      <li><strong>WSL</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<p><br /></p>
+
+<h4 id="참고">참고</h4>
+
+<ul>
+  <li><a href="https://wikibook.co.kr/docker-kube/">시작하세요! 도커/쿠버네티스(2020)</a></li>
+</ul>]]></content><author><name></name></author><category term="docker" /><category term="docker" /><category term="install" /><summary type="html"><![CDATA[WSL2 Ubuntu 20.04 환경에서 Docker 설치]]></summary></entry><entry><title type="html">NLP_한국어 임베딩(2019) 3장 정리</title><link href="http://localhost:4000/nlp_preprocessing/" rel="alternate" type="text/html" title="NLP_한국어 임베딩(2019) 3장 정리" /><published>2020-02-02T18:00:00+09:00</published><updated>2020-02-02T18:00:00+09:00</updated><id>http://localhost:4000/nlp_preprocessing</id><content type="html" xml:base="http://localhost:4000/nlp_preprocessing/"><![CDATA[<hr />
 
 <p>※ 이 글은 <a href="http://acornpub.co.kr/book/korean-embedding">한국어 임베딩(2019)</a> 책을 개인적으로 정리하고 잡다한 것들을 추가한 글입니다.<br />원문과 똑같은 부분은… 이해를 못해서 그대로 쓴 부분입니다.</p>
 
